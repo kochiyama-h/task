@@ -33,7 +33,7 @@ Application Keyの作成 　php artisan key:generate
 
 マイグレーション 　php artisan migrate
 
-
+シンボリックリンクを作成 php artisan storage:link
 
 
 
