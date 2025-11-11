@@ -1,0 +1,362 @@
+body {
+    margin: 0;
+    font-family: "Noto Sans JP", sans-serif;
+    color: #333;
+    background-color: #fff;
+    line-height: 1.6;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    border-bottom: 1px solid #e0e0e0;
+    padding: 15px 50px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #004aad;
+}
+
+.nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav a {
+    color: #333;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav a:hover {
+    color: #007bff;
+}
+
+/* Hero section */
+.hero {
+    background: url("/images/building.jpg") center/cover no-repeat;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    position: relative;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.hero-content {
+    position: relative;
+    text-align: center;
+    z-index: 1;
+}
+
+.hero-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.hero-content p {
+    font-size: 1.1rem;
+}
+
+/* Section */
+.section {
+    padding: 80px 20px;
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.section h2 {
+    font-size: 2rem;
+    color: #004aad;
+    margin-bottom: 30px;
+}
+
+.bg-light {
+    background-color: #f9f9f9;
+}
+
+/* Cards */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.card {
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 25px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.card h3 {
+    color: #004aad;
+    margin-bottom: 10px;
+}
+
+/* Button */
+.btn {
+    display: inline-block;
+    background-color: #004aad;
+    color: #fff;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background-color: #003a8c;
+}
+
+/* Footer */
+.footer {
+    background-color: #f4f4f4;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9rem;
+    color: #666;
+    margin-top: 60px;
+}
+
+.contact-form-section {
+    padding: 80px 20px;
+    background-color: #f9f9f9;
+}
+
+.contact-form-section .container {
+    max-width: 600px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.contact-form-section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contact-form .form-group {
+    margin-bottom: 20px;
+}
+
+.contact-form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+.contact-form .btn {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    background-color: #0077cc;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.contact-form .btn:hover {
+    background-color: #005fa3;
+}
+
+.back-link {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.thanks-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh; /* 画面の高さに応じて中央配置 */
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.thanks-section .container {
+    max-width: 600px;
+    background-color: #fff;
+    padding: 40px 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.thanks-section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+.thanks-section p {
+    font-size: 1.1rem;
+    margin-bottom: 40px;
+    color: #555;
+    line-height: 1.6;
+}
+
+.thanks-actions .btn {
+    margin: 0 10px;
+    padding: 10px 20px;
+}
+
+
+.services-page {
+    padding: 80px 20px;
+    background-color: #fff;
+}
+
+.services-page .container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.services-page h1 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.service-section {
+    margin-bottom: 80px;
+}
+
+.service-section h2 {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.service-section p {
+    text-align: center;
+    margin-bottom: 30px;
+    line-height: 1.8;
+}
+
+.service-link .btn {
+    margin-top:20px ;
+}
+
+.bg-light {
+    background-color: #f9f9f9;
+    padding: 60px 20px;
+    border-radius: 8px;
+}
+
+/* 賃貸仲介 */
+.rental-list {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.rental-item {
+    width: calc(33.333% - 20px);
+    text-align: center;
+}
+
+.rental-item img {
+    width: 100%;
+    border-radius: 10px;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.rental-item p {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+/* 売買サポート */
+.problem-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+.problem-cards .card {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 250px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.05);
+}
+
+/* 物件管理 */
+.management {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.management-image {
+    flex: 1 1 45%;
+}
+
+.management-image img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.management-text {
+    flex: 1 1 50%;
+    line-height: 1.8;
+    font-size: 16px;
+}
+
+/* 小画面対応 */
+@media (max-width: 768px) {
+    .rental-item {
+        width: 100%;
+    }
+
+    .problem-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .management {
+        flex-direction: column;
+    }
+}
